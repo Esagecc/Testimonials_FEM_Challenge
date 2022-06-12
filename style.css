@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+:root {
+    --mod-violet: hsl(263, 55%, 52%);
+    --dk-gray-blue: hsl(217, 19%, 35%);
+    --dk-blk-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --lt-gray: hsl(0, 0%, 81%);
+    --lt-gray-blue: hsl(210, 46%, 95%);
+    --gray: rgb(165, 165, 165);
+
+}
+
+body {
+    background-color: var(--lt-gray-blue)
+}
+
+.main {
+    padding: 1.75rem;
+}
+
+.intro {
+    display: flex;
+}
+
+.icon {
+    position:absolute;
+    top: 1px;
+    right: 20px;
+    z-index:1;
+}
+
+.ontop {
+    z-index:2;
+    position: relative;
+}
+
+.card {
+    padding: 2rem;
+    border-radius: .5rem;
+    border: none;
+    margin: 2rem auto;
+    box-shadow: 4px 4px 4px gray;
+}
+
+.pro-pic {
+    height: 30px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+.nam-title, .text {
+    font-size: 13px;
+}
+
+.name {
+    padding-bottom: 2px;
+}
+
+.nam-title {
+    padding-bottom: 20px;
+}
+
+.quote {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.sec-one .name, .sec-one .quote, 
+.sec-two .name, .sec-two .quote, 
+.sec-four .name, .sec-four .quote {
+    color: var(--white);
+    font-weight: 400;
+}
+
+.sec-three .cred, .sec-three .text,
+.sec-five .cred, .sec-five .text  {
+    color: var(--gray);
+    /* font-weight: 500; */
+}
+
+.pro-pic{
+    border: 2px solid var(--gray);
+}
+
+.sec-one .cred, .sec-one .text, 
+.sec-two .cred, .sec-two .text, 
+.sec-four .cred, .sec-four .text {
+    color: var(--lt-gray);
+    font-weight: 400;
+}
+
+.sec-one {
+    background-color: var(--mod-violet);
+    position: relative;
+}
+
+.sec-two {
+    background-color: var(--dk-gray-blue);
+}
+
+.sec-three, .sec-five {
+    background-color: var(--white);
+}
+
+.sec-four {
+    background-color: var(--dk-blk-blue);
+}
+
+.attribution {
+    padding-bottom: 15px;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
